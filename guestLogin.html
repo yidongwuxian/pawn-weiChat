@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>用户登录</title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/guest.css" />
+</head>
+<body>
+<div class="guest-bd">
+	<div class="mui-content">
+	    <div class="service_title">
+            <div class="pr">
+            	<img class="user_head_portrait guest-hd" src="img/guest-hd.png" />
+                <img class="user_head_portrait guest-logo" src="img/guest-logo.png" />
+            </div>
+        </div>
+        <div class="guest-cn">
+        	<form class="cmxform" id="loginForm" method="post" action="">
+	        	<div class="bd">
+		        	<h4>Mobile Phone</h4>
+		        	<div class="mui-input-row mui-input-radius">	
+						<label class="guest-phone"><img src="img/guest-phone.png" /></label>
+						<input type="tel" id="phone" class="validele an-left50" placeholder="输入手机号" data-class="mobile" oninput="this.value=this.value.replace(/\D/g,'')"/>
+					</div>
+					<h4>Cipher</h4>
+		        	<div class="mui-input-row mui-input-radius">	
+						<label class="guest-lock"><img src="img/guest-lock.png" /></label>
+						<input type="password" class="validele an-left50" placeholder="密码" data-class="password" />
+					</div>
+				</div>
+				<div class="verifySwap">
+					<button class="mui-btn mui-btn-outlined loginBtn"><a href="javascript:;"  id="loginValidate">登录</a></button>
+					<button class="mui-btn mui-btn-outlined regBtnYe"><a href="/pawn-weiChat/guestReg.html">还没有账号</a></button>
+				</div>
+			</form>
+        </div>
+	</div>
+</div>
+<script src="js/libs/jquery/v2.2.1/jquery.min.js"></script>
+<script src="js/libs/mui/v2.8.0/mui.min.js"></script>
+<script src="js/formValid.js"></script>
+<script src="js/guestValid.js"></script>
+<script src="js/guest.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>贷款申请</title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/guest.css" />
+</head>
+<body>
+	<div class="guest-bd">
+		<div class="mui-content">
+		    <div class="service_title">
+	            <div class="pr">
+	            	<img class="user_head_portrait guest-hd" src="img/guest-hd.png" />
+	            </div>
+	        </div>
+	        <div class="guest-cn">
+	        	<form class="cmxform" id="loanForm" method="post" action="">
+	        		<div class="bd loanBox">
+			        	<div class="mui-input-row mui-input-radius mui-row-m15">
+			        		<label class="guest-lock"></label>
+							<input type="text" class="validele" placeholder="真实姓名" data-class="name"  />
+						    <i>*</i>
+						</div>
+			        	<div class="mui-input-row mui-input-radius mui-row-m15">	
+							<label class="guest-lock"></label>
+							<input type="text" placeholder="身份证号">
+							<i>*</i>
+						</div>
+						<div class="mui-input-row mui-input-radius mui-row-m15">	
+							<label class="guest-lock"></label>
+							<input type="text" placeholder="抵押物">
+							<i>*</i>
+						</div>
+						<div class="loan-tab loan-tabBox">
+							<span>是否为自有房产</span>
+							<div id="segmentedControl" class="mui-segmented-control">
+								<p><a class="mui-control-item mui-active" href="#item1">是</a></p>
+								<p><a class="mui-control-item" href="#item2">否</a></p>
+							</div>
+						</div>
+						<div>
+							<div id="item1" class="mui-control-content mui-active">
+								<div class="mui-input-row mui-input-radius mui-row-m15">
+					        		<label class="guest-lock"></label>
+									<input type="text" placeholder="申请额度(万)">
+								    <i>*</i>
+								</div>
+								<div class="mui-input-row mui-input-radius mui-row-m15">
+					        		<label class="guest-lock"></label>
+									<input type="text" placeholder="期限(月)">
+								    <i>*</i>
+								</div>
+								<div class="mui-input-row mui-input-radius mui-row-m15">
+					        		<label class="guest-lock"></label>
+									<input type="text" placeholder="代理人编号(选填)">
+								</div>
+								<div class="mui-input-row mui-input-radius mui-row-m15">
+					        		<label class="guest-lock"></label>
+									<input type="text" placeholder="产权证号">
+								    <i>*</i>
+								</div>
+								<div class="mui-input-wrap pr">
+					        		<label>身份证复印件正面</label>
+					        		<div class="fileUp">
+					        			<a class="updateImg"><img  src="img/guest-updateImg.png" data-preview-src="" data-preview-group="1" /></a>
+					        			<input type="file" class="fileUpBtn" />
+					        		</div>
+					        		<img class="penImg" src="img/guest-pen.png" />
+					        		<i>*</i>
+								</div>
+								<div class="mui-input-wrap pr">
+					        		<label>身份证复印件背面</label>
+					        		<div class="fileUp">
+					        			<a class="updateImg"><img  src="img/guest-updateImg.png" data-preview-src="" data-preview-group="2" /></a>
+					        			<input type="file" class="fileUpBtn" />
+					        		</div>
+					        		<img class="penImg" src="img/guest-pen.png" />
+					        		<i>*</i>
+								</div>
+								<div class="mui-input-wrap pr">
+					        		<label>房产证照片(选填)</label>
+					        		<div class="fileUp">
+					        			<a class="updateImg"><img  src="img/guest-updateImg.png" data-preview-src="" data-preview-group="3" /></a>
+					        			<input type="file" class="fileUpBtn" />
+					        		</div>
+					        		<img class="penImg" src="img/guest-pen.png" />
+
+								</div>
+							</div>
+							<div id="item2" class="mui-control-content">
+								<div class="mui-input-group">
+									<h5>房屋所有人信息</h5>
+									<div class="mui-input-row mui-row-m15 pr">
+										<label></label>
+										<input type="text" placeholder="身份证">
+										<i>*</i>
+									</div>
+									<div class="mui-input-row mui-row-m15 pr">
+										<label></label>
+										<input type="text" placeholder="姓名">
+										<i>*</i>
+									</div>
+									<div class="mui-input-row mui-row-m15 pr">
+										<label></label>
+										<input type="tel" placeholder="手机号">
+										<i>*</i>
+									</div>
+								</div>
+								<div class="mui-input-row mui-input-radius mui-row-m15">
+					        		<label class="guest-lock"></label>
+									<input type="text" placeholder="申请额度(万)">
+								    <i>*</i>
+								</div>
+								<div class="mui-input-row mui-input-radius mui-row-m15">
+					        		<label class="guest-lock"></label>
+									<input type="text" placeholder="期限(月)">
+								    <i>*</i>
+								</div>
+								<div class="mui-input-row mui-input-radius mui-row-m15">
+					        		<label class="guest-lock"></label>
+									<input type="text" placeholder="代理人编号(选填)">
+								    <i>*</i>
+								</div>
+								<div class="mui-input-row mui-input-radius mui-row-m15">
+					        		<label class="guest-lock"></label>
+									<input type="text" placeholder="产权证号">
+								    <i>*</i>
+								</div>
+								<div class="mui-input-wrap pr">
+					        		<label>身份证复印件正面</label>
+					        		<div class="fileUp">
+					        			<a class="updateImg"><img  src="img/guest-updateImg.png" /></a>
+					        			<input type="file" class="fileUpBtn" />
+					        		</div>
+					        		<img class="penImg" src="img/guest-pen.png" />
+					        		<i>*</i>
+								</div>
+								<div class="mui-input-wrap pr">
+					        		<label>身份证复印件背面</label>
+					        		<div class="fileUp">
+					        			<a class="updateImg"><img  src="img/guest-updateImg.png" /></a>
+					        			<input type="file" class="fileUpBtn" />
+					        		</div>
+					        		<img class="penImg" src="img/guest-pen.png" />
+					        		<i>*</i>
+								</div>
+								<div class="mui-input-wrap pr">
+					        		<label>房产证照片（选填）</label>
+					        		<div class="fileUp">
+					        			<a class="updateImg"><img  src="img/guest-updateImg.png" /></a>
+					        			<input type="file" class="fileUpBtn" />
+					        		</div>
+					        		<img class="penImg" src="img/guest-pen.png" />
+					        		<i>*</i>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="verifySwap">
+						<button class="mui-btn mui-btn-outlined whiteBtn2"><a href="javascript:;" id="loanValidate">提交</a></button>
+					</div>
+	        	</form>
+	        </div>
+		</div>
+	</div>
+<script src="js/libs/jquery/v2.2.1/jquery.min.js"></script>
+<script src="js/libs/mui/v2.8.0/mui.min.js"></script>
+<script src="js/libs/mui/mui.zoom.js"></script>
+<script src="js/libs/mui/mui.previewimage.js"></script>
+<script src="js/formValid.js"></script>
+<script src="js/guestValid.js"></script>
+<script src="js/guest.js"></script>
+<script type="text/javascript">
+	//图片预览
+    //mui.previewImage();
+    mui('.fileUp').on('tap','a',function(){
+	 	$(this).find('.penImg').show();
+	})
+	
+//	var check = true;
+//	mui(".updateImg img").each(function () {
+//	  //若当前input为空，则alert提醒
+//	  $(this).click(function(){
+//	  	alert('1111');
+//	  });
+//	  
+//	  
+////	  if(!this.value||trim(this.value)==""){
+////	    var label = this.previousElementSibling;
+////	    mui.alert(label.innerText+"不允许为空");
+////	    check = false;
+////	    return false;
+////	  }
+//	});
+//	//校验通过，继续执行业务逻辑
+//	if(check){
+//	  //.....
+//	}
+	
+	
+</script>
+</body>
+</html>

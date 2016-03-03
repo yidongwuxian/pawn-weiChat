@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>用户注册</title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/guest.css" />
+</head>
+<body>
+<div class="guest-bd">
+	<div class="mui-content">
+	    <div class="service_title">
+            <div class="pr">
+            	<img class="user_head_portrait guest-hd" src="img/guest-hd.png" />
+                <img class="user_head_portrait guest-logo" src="img/guest-logo.png" />
+            </div>
+        </div>
+        <div class="guest-cn">
+        	<form class="cmxform" id="regForm" method="post" action="">
+	        	<div class="bd">
+	        		<h4>Mobile Phone</h4>
+		        	<div class="mui-input-row mui-input-radius">	
+						<label class="guest-phone"><img src="img/guest-phone.png" /></label>
+						<input type="tel" id="phone" class="validele an-left50" placeholder="手机号" data-class="mobile" oninput="this.value=this.value.replace(/\D/g,'')"/>
+					</div>
+					<h4>Validate Code</h4>
+		        	<div class="mui-input-row mui-input-radius">	
+						<label class="guest-ellipsis"><img src="img/guest-ellipsis.png" /></label>
+						<input type="text" class="validele an-left50" placeholder="验证码" data-class='validcode' oninput="this.value=this.value.replace(/\D/g,'')" />
+						<a class="seZcode" id="getcode" href="javascript:;">获取验证码</a>
+					</div>
+					<h4>Cipher</h4>
+		        	<div class="mui-input-row mui-input-radius">	
+						<label class="guest-lock"><img src="img/guest-lock.png" /></label>
+						<input type="password" class="validele an-left50" placeholder="密码" data-class="password" />
+					</div>
+					<h4>Cipher</h4>
+		        	<div class="mui-input-row mui-input-radius">	
+						<label class="guest-lock"><img src="img/guest-lock.png" /></label>
+						<input type="password" class="validele an-left50" placeholder="重置密码" data-class="surepassword" />
+					</div>
+	        	</div>
+				<div class="verifySwap">
+					<button class="mui-btn mui-btn-outlined whiteBtn1"><a href="javascript:;"  id="regValidate">注册</a></button>
+					<button class="mui-btn mui-btn-outlined loginBtnYe"><a href="/pawn-weiChat/guestLogin.html">已有账号</a></button>
+				</div>
+			</form>
+        </div>
+	</div>
+</div>
+<script src="js/libs/jquery/v2.2.1/jquery.min.js"></script>
+<script src="js/libs/mui/v2.8.0/mui.min.js"></script>
+<script src="js/formValid.js"></script>
+<script src="js/guestValid.js"></script>
+<script src="js/guest.js"></script>
+</body>
+</html>
